@@ -1,4 +1,4 @@
-package org.smartportfolio
+package org.smart-portfolio
 
 //#user-routes-spec
 //#test-top
