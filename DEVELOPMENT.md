@@ -2,28 +2,21 @@
 To support JavaScript and Scala in the same repo we leverage the [pants build](https://www.pantsbuild.org) system.
 
 ## Server
-To build the server,
+Pants integrates well with scala. You can develop the server as follows,
 
-```
-./pants compile ./server:smartportfolio-server
-```
+- compile, `./pants compile ./server:smartportfolio-server`
+- run, `./pants run ./server:smartportfolio-server`
+- lint, `./pants lint ./server:smartportfolio-server`
+- format, `./pants fmt ./server:smartportfolio-server`
 
-to run,
+If you prefer you can also still use `sbt`.
 
-```
-./pants run ./server:smartportfolio-server
-```
+## Client
+Pants integrates with yarn. You can run the development server as follows,
 
-to lint the server,
+- run development mode, `./pants run client:client-start`
+- bundle, `./pants run client:client`
+- lint, `./pants run client:client-lint`
+- format, `./pants run client:client-fmt`
 
-```
-./pants lint ./server:smartportfolio-server
-```
-
-and to format
-
-```
-./pants fmt ./server:smartportfolio-server
-```
-
-
+If you prefer you can also still use `yarn`.
