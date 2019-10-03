@@ -1,5 +1,6 @@
 # Building
-To support JavaScript and Scala in the same repo we leverage the [pants build](https://www.pantsbuild.org) system.
+To support JavaScript and Scala in the same repo we leverage the [pants build](https://www.pantsbuild.org) system. 
+To work on mac make sure to run `ulimit -n 10000` first.
 
 ## Server
 Pants integrates well with scala. You can develop the server as follows,
