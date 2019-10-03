@@ -192,3 +192,9 @@ modules.xml
 *.class
 target/
 *.log
+
+## Pants files
+.pants.d
+dist
+.pids
+.pants.workdir.file_lock
